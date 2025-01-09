@@ -1,0 +1,125 @@
+.layoutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20rem;
+}
+
+.whiteBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 16px;
+  padding: 40px 80px;
+  min-width: 380px;
+  cursor: pointer;
+  position: relative;
+}
+
+.whiteBox:hover {
+  background-color: orange;
+}
+
+.moveBox {
+  background-color: rgb(97, 209, 97);
+  border-radius: 16px;
+  padding: 8px;
+  position: absolute;
+  bottom: -15px;
+}
+
+.moveBox > span {
+  color: white;
+}
+
+.triangleContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.triangleLeft {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-right: 100px solid gray;
+}
+
+.triangleRight {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 100px solid gray;
+}
+
+.triangleUp {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid gray;
+}
+
+.triangleDown {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid gray;
+}
+
+.shapeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.shapeBox {
+  display: flex;
+  gap: 16px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background: gray;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: gray;
+  border-radius: 50%;
+}
+
+.ellipse {
+  width: 150px;
+  height: 100px;
+  background: gray;
+  border-radius: 50%;
+}
+
+.trapezoid {
+  width: 180px;
+  height: 0;
+  border-bottom: 100px solid gray;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+}
+
+.parallelogram {
+  width: 160px;
+  height: 80px;
+  background: gray;
+  transform: skew(20deg);
+}
+
+.rectangle {
+  width: 200px;
+  height: 100px;
+  background: gray;
+}
