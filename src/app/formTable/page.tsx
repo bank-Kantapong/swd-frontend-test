@@ -28,7 +28,6 @@ const FormTable = () => {
   );
   const dispatch = useDispatch();
   const isInit = useRef<boolean>(false);
-  console.log("selectedUser", selectedUser);
 
   useEffect(() => {
     const localUserInfo = localStorage.getItem("userInfo");
